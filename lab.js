@@ -46,6 +46,7 @@ if (amysAge > brittanisAge) {
 */
 
 //CODE HERE
+console.log(`Problem 3:`)
 if (brittanisBirthYear === amysBirthYear) {
   console.log(`Amy and Brittani were born in the same year \n`)
 } else {
@@ -66,6 +67,7 @@ let rain = false;
 */
 
 //CODE HERE
+console.log(`Problem 4:`)
 console.log(`Rain?`, rain)
 console.log(`Temp:`, temperature)
 
@@ -96,9 +98,12 @@ if (rain === true) {
 */
 
 //CODE HERE
+console.log(`Problem 5:`)
+console.log(`here is the word 'hello' printed 10 times:`)
 for (let i = 0; i < 10; i++) {
   console.log(`hello`)
 }
+console.log(`\n`)
 
 ////////// PROBLEM 6 //////////
 
@@ -107,6 +112,11 @@ for (let i = 0; i < 10; i++) {
 */
 
 //CODE HERE
+console.log(`Problem 6:`)
+for (let i = 1; i <= 10; i++) {
+  console.log(i)
+}
+console.log(`\n`)
 
 ////////// PROBLEM 7 //////////
 
@@ -115,7 +125,11 @@ for (let i = 0; i < 10; i++) {
 */
 
 //CODE HERE
-
+console.log(`Problem 7:`)
+for (let i = 10; i >= 0; i--) {
+  console.log(i)
+}
+console.log(`\n`)
 
 ////////// PROBLEM 8 //////////
 
@@ -123,10 +137,19 @@ let score = 0;
 let passingScore = 7;
 
 /*
-  Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
+  Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of 
+  the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
 
 //CODE HERE
+console.log(`Problem 8:`)
+while (score < passingScore) {
+  console.log(`Your score of ${score} is not high enough`)
+  score++
+  if (score >= passingScore) {
+  console.log(`Congrats. Your score of ${score} is passing \n`)
+  }
+}
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
@@ -138,17 +161,50 @@ let passingScore = 7;
 */
 
 //CODE HERE
+console.log(`Problem 9:`)
+let changeMyMind = true
+console.log(`changeMyMind = `, changeMyMind)
+console.log(`Mind changing in progress...`)
+if (changeMyMind === true) {
+  changeMyMind = false
+} else if (changeMyMind === false) {
+    changeMyMind = true
+  }
+
+console.log(`changeMyMind = `, changeMyMind, `\n`)
 
 ////////// PROBLEM 10 //////////
-// Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
+// Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the 
+// if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
 //CODE HERE
+console.log(`Problem 10:`)
+if (changeMyMind !== true) {
+  changeMyMind = true
+}
+console.log(`changeMyMind = `, changeMyMind, `\n`)
 
 ////////// ADVANCED PROBLEMS //////////
 
 ////////// PROBLEM 11 //////////
 
 let z = 5;
-// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
+let x = 5;
+// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. 
+// Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 
+// 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+console.log(`Problem 11:`)
+console.log(`z = `, z)
+
+while (z > 0) {
+  console.log(z)
+  z--
+}
+
+
+// while (z > 0) {
+//   console.log(z)
+//   z--
+// }
