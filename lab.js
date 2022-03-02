@@ -196,15 +196,13 @@ let x = 5;
 
 //CODE HERE
 console.log(`Problem 11:`)
-console.log(`z = `, z)
+console.log(`z = `, z, `\n`)
 
 while (z > 0) {
-  console.log(z)
+  for (let i = z; i > 0; i--) {
+    console.log(i)
+  }
   z--
 }
 
-
-// while (z > 0) {
-//   console.log(z)
-//   z--
-// }
+xc = 0
