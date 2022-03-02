@@ -33,9 +33,9 @@ var brittanisBirthYear = 1986;
 if (amysAge > brittanisAge) {
   console.log(`Amy is older`)
 } else if (amysAge < brittanisAge) {
-  console.log(`Brittani is older`)
+  console.log(`Brittani is older \n`)
 } else {
-  console.log(`They're the same age`)
+  console.log(`They're the same age \n`)
 }
 
 ////////// PROBLEM 3 //////////
@@ -47,22 +47,47 @@ if (amysAge > brittanisAge) {
 
 //CODE HERE
 if (brittanisBirthYear === amysBirthYear) {
-  console.log(`Amy and Brittani were born in the same year`)
+  console.log(`Amy and Brittani were born in the same year \n`)
 } else {
-  console.log(`Amy and Brittani were not born in the same year`)
+  console.log(`Amy and Brittani were not born in the same year \n`)
 }
 
 ////////// PROBLEM 4 //////////
 
-let temperature = 55;
-let rain = true;
+let temperature = 35;
+let rain = false;
 
 /*
-  Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
-  If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
+  Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, 
+  based on the above temperature and rain.
+  If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, 
+  one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own 
+  clothing suggestions based on those temperature parameters when it is not raining.
 */
 
 //CODE HERE
+console.log(`Rain?`, rain)
+console.log(`Temp:`, temperature)
+
+if (rain === true) {
+  if (temperature >= 80) {
+    console.log(`Might I suggest a t-shirt and an umbrella today? \n`)
+  } else if (temperature < 80 && temperature > 60) {
+    console.log(`Might I suggest a rain jacket? \n`)
+  } else if (temperature <= 60) {
+    console.log(`Might I suggest a jacket and an umbrella? \n`)
+  } else {
+    console.log(`Something is broken`)
+  }
+} else if (rain === false) {
+  if (temperature >= 75) {
+    console.log(`Might I suggest a t-shirt and sunglasses? \n`)
+  } else if (temperature < 75 && temperature >= 50) {
+    console.log(`Might I suggest a sweater? \n`)
+  } else if (temperature < 50) {
+    console.log(`Might I suggest moving to San Diego? \n`)
+  }
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -71,6 +96,7 @@ let rain = true;
 */
 
 //CODE HERE
+
 
 ////////// PROBLEM 6 //////////
 
